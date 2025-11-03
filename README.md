@@ -1,16 +1,39 @@
-# React + Vite
+# 🤖 AI Interview Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> _An AI-powered interview simulator built entirely in React — no backend required._
+---
 
-Currently, two official plugins are available:
+## 🧠 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**AI Interview Assistant** is a web-based interactive platform that simulates real interviews using AI.  
+Candidates can upload their resumes, interact with an AI interviewer, and get scored automatically — all inside the browser.  
 
-## React Compiler
+It’s built with **React**, uses **Zustand** for global state management, and calls the **Groq API** directly from the frontend for question generation and evaluation.  
+No backend or database setup required 🚀  
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🧾 **Smart Resume Parsing** — Extracts name, email, and phone using regex or prompts user for missing data.  
+- 💬 **AI-Powered Chat Interview** — Real-time, conversational interview simulation powered by Groq API.  
+- ⚙️ **Zustand State Management** — Lightweight and fast global state for candidate details, chat logs, and results.  
+- 🧠 **Dynamic Question Flow** — Each question adapts to candidate’s previous response contextually.  
+- 👩‍💼 **Interviewer Dashboard** — Separate view to review candidate performance and scores.  
+---
+
+## 🧩 Tech Stack
+
+| Layer | Tools Used |
+|:------|:------------|
+| **Frontend** | React (Vite) |
+| **State Management** | Zustand |
+| **Styling** | Tailwind CSS |
+| **Resume Parsing** | pdf.js, mammoth.js |
+| **AI Integration** | Groq API |
+| **Build Tool** | Vite |
+
+---
+
+## 🏗️ Project Structure
+
